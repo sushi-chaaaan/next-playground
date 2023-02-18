@@ -7,12 +7,13 @@
     "build": "next build",
     "dev": "next dev",
     "fix": "yarn run lint:fix && yarn run format",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,md,mdx}'",
     "preinstall": "typesync || :",
     "postinstall": "yarn run sort-package-json",
     "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "start": "next start"
+    "lint:fix": "yarn lint --fix",
+    "start": "next start",
+    "up": "yarn run fix && yarn dev"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",
@@ -22,6 +23,7 @@
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-spotify-embed": "^1.0.4",
     "react-twitter-embed": "^4.0.4",
     "rehype-highlight": "^6.0.0",
     "remark-gfm": "^3.0.1"

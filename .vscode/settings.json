@@ -4,6 +4,15 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".ts", ".tsx"]
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
