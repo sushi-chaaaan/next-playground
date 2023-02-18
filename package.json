@@ -2,6 +2,7 @@
   "name": "next-playground",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
@@ -14,10 +15,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
     "@next/font": "13.1.6",
+    "@next/mdx": "^13.1.6",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-twitter-embed": "^4.0.4",
+    "rehype-highlight": "^6.0.0",
+    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
     "@types/eslint": "8.21.1",
